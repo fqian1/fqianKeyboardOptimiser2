@@ -12,7 +12,7 @@
 				"${workspaceFolder}/src/*.cpp",
 				"-I${workspaceFolder}/include",
 				"-o",
-				"${fileDirname}/${fileBasenameNoExtension}"
+				"main"
 			],
 			"options": {
 				"cwd": "${fileDirname}"

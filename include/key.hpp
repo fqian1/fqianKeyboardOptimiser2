@@ -6,11 +6,11 @@ public:
     const int keyId;
     const double posX;
     const double posY;
-    const wchar_t regChar;
-    const wchar_t shiftChar;
+    const char regChar;
+    const char shiftChar;
 
-    Key(int keyId, double posX, double posY, wchar_t regChar, wchar_t shiftChar);
+    Key(int keyId, double posX, double posY, char regChar, char shiftChar);
 
     void print() const;
-    bool isRegular(wchar_t c) const;
+    bool isRegular(char c) const;
 };

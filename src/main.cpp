@@ -49,8 +49,8 @@ std::vector<Key> initKeys()
 
 int main()
 {
-    std::wstring regCharLayout = LR"(`1234567890-TABqwertyuiop[ESCAPEasdfghjkl;#LEFT_SHIFT\zxcvbnm,.RIGHT_SHIFTALTCTRL)";
-    std::wstring shiftCharLayout = LR"(¬!"£$%^&*()_TABQWERTYUIOP+ESCAPEASDFGHJKL:#LEFT_SHIFT|ZXCVBNM<>RIGHT_SHIFT)";
+    std::string regCharLayout = LR"(`1234567890-\tqwertyuiop=\x1basdfghjkl;#0x80\zxcvbnm,.0x810x83)";
+    std::string shiftCharLayout = LR"()";
     int rows = 5;
     int columns = 12;
     std::vector<double> rowOffsets(rows, 0);

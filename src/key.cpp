@@ -1,17 +1,16 @@
 #include "iostream"
 #include "key.hpp"
 
-Key::Key(int keyId, double posX, double posY, wchar_t regChar, wchar_t shiftChar, int fingerId)
-        : keyId(keyId), posX(posX), posY(posY), regChar(regChar), shiftChar(shiftChar), fingerId(fingerId) {};
+Key::Key(int keyId, double posX, double posY, char regChar, char shiftChar)
+        : keyId(keyId), posX(posX), posY(posY), regChar(regChar), shiftChar(shiftChar) {};
 
 void Key::print() const 
 {
-    std::wcout << L"Key(ID: " << keyId << L", Position: (" << posX << L", " << posY
-                << L"), Regular: '" << regChar << L"', Shift: '" << shiftChar << L"', Finger: "
-                << fingerId << L")" << std::endl;
+    std::wcout << "Key(ID: " << keyId << ", Position: (" << posX << ", " << posY
+                << "), Regular: '" << regChar << "', Shift: '" << shiftChar << std::endl;
 }
 
-bool Key::isRegular(wchar_t c) const
+bool Key::isRegular(char c) const
 {
     return c == regChar ? true : false;
 }
